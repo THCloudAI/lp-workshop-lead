@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Workflow Workshop เต็มวัน — เขียนคู่มือขั้นตอนงานจริงกับทีมคุณ | THCloud.AI</title>
+<meta name="description" content="Workshop เต็มวันสำหรับองค์กร ลงมือเขียนคู่มือขั้นตอนการทำงานจริง เพื่อค้นหาปัญหาและจับคู่ AI Solution ที่ใช่ กลับบ้านพร้อมเอกสาร Roadmap และ  เริ่มต้น 10 ท่าน ราคาเริ่ม ฿45,000">
+<meta name="keywords" content="AI workshop องค์กร, QP WI workshop, AI transformation training, corporate AI training Thailand">
+<meta name="theme-color" content="#4644E7">
+<link rel="canonical" href="https://thcloud.ai/workshop-qpwi">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Workflow Workshop เต็มวัน — เขียนคู่มือขั้นตอนงานจริงกับทีมคุณ | THCloud.AI">
+<meta property="og:description" content="Workshop เต็มวันที่ทีมของคุณลงมือเขียนคู่มือขั้นตอนการทำงานจริง ค้นหาปัญหาและจับคู่ AI Solution ที่เหมาะกับองค์กร กลับบ้านพร้อม Roadmap ที่ใช้งานได้จริง">
+<meta property="og:url" content="https://thcloud.ai/workshop-qpwi">
+<meta property="og:image" content="https://thcloud.ai/og-workshop-qpwi.jpg">
+<meta property="og:locale" content="th_TH">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Workflow Workshop เต็มวัน | THCloud.AI">
+<meta name="twitter:description" content="ลงมือเขียนคู่มือขั้นตอนการทำงานจริง ค้นหาปัญหาและจับคู่ AI Solution ที่ใช่สำหรับองค์กรคุณ">
+
+<!-- Fonts: Prompt (display) + Bai Jamjuree (body) — THCloud.AI brand typefaces, Thai + Latin -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Prompt:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     TRACKING — Google tag (GA4 + Google Ads) + Meta Pixel
+     Replace the placeholder IDs below with your real IDs.
+     A "Lead" / conversion event fires automatically on successful
+     form submission (see the form script near the end of the file).
+     ============================================================ -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPKBT31M7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-SPKBT31M7G');   // TODO: your GA4 Measurement ID
+  gtag('config', 'AW-XXXXXXXXXX');  // TODO: your Google Ads Conversion ID
+</script>
+
+<!-- Meta (Facebook) Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1425997562064188'); // TODO: LM-OpenwebUI-Ai-Transformation (fb)
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=1425997562064188&ev=PageView&noscript=1"
+/></noscript>
+
+<style>
+  /* ============================================================
+     TOKENS — derived from THCloud.AI Corporate Identity Guide
+     (blue/purple scale, Prompt + Bai Jamjuree typefaces)
+     ============================================================ */
+  :root{
+    /* Brand blue scale */
+    --blue-950:#191845; --blue-900:#2D2D82; --blue-800:#312EA5; --blue-700:#3B36CC;
+    --blue-600:#4644E7; --blue-500:#616AF3; --blue-400:#7F90FA; --blue-300:#A4B7FD;
+    --blue-200:#C6D4FF; --blue-100:#E0E8FF; --blue-50:#EEF3FF;
+
+    /* Gradient family (from CI gradient palette) */
+    --grad-a:#5D99FF; --grad-b:#1457E0; --grad-c:#7641BF; --grad-d:#324CE2;
+
+    /* Semantic */
+    --positive:#16A34A; --positive-bg:#DCFCE7;
+    --caution:#D97706;  --caution-bg:#FEF3C7;
+    --negative:#DC2626; --negative-bg:#FEE2E2;
+
+    /* Roles */
+    --primary:var(--blue-600);
+    --primary-dark:var(--blue-800);
+    --primary-darker:var(--blue-950);
+    --primary-light:var(--blue-400);
+    --ink:#161331;            /* near-black, blue-tinted, for body text */
+    --ink-muted:#5B5E78;      /* muted slate-violet for secondary text */
+    --border:#E3E5F3;
+    --bg:#F7F8FD;
+    --card:#FFFFFF;
+
+    --radius-sm:8px; --radius-md:14px; --radius-lg:20px; --radius-xl:28px;
+    --shadow-sm:0 1px 2px rgba(22,19,49,.06);
+    --shadow-md:0 8px 24px rgba(22,19,49,.08);
+    --shadow-lg:0 20px 48px rgba(22,19,49,.14);
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Bai Jamjuree','Sarabun',-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.nav-logo,.price,.stats,.section-label{ font-family:'Prompt','Sarabun',sans-serif; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+
+  /* Skip link for keyboard/screen-reader users */
+  .skip-link{ position:absolute; left:-999px; top:auto; background:var(--primary); color:#fff; padding:12px 20px; border-radius:0 0 8px 0; z-index:1000; font-weight:600; }
+  .skip-link:focus{ left:0; top:0; }
+
+  :focus-visible{ outline:3px solid var(--blue-300); outline-offset:2px; border-radius:4px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+  }
+
+  /* ========== LANGUAGE SWITCHER ========== */
+  .lang-switcher{ position:fixed; bottom:24px; right:24px; z-index:999; display:flex; gap:4px; background:var(--card); border:1.5px solid var(--border); border-radius:28px; padding:4px; box-shadow:var(--shadow-lg); }
+  .lang-btn{ padding:8px 16px; border-radius:24px; border:none; background:transparent; cursor:pointer; font-family:'Prompt',sans-serif; font-size:.85rem; font-weight:700; letter-spacing:.03em; transition:all .2s var(--ease); color:var(--ink-muted); }
+  .lang-btn.active{ background:var(--primary); color:#fff; }
+  .lang-btn:not(.active):hover{ background:var(--blue-50); color:var(--primary); }
+
+  [data-lang]{ display:none; }
+  [data-lang="th"]{ display:inline; }
+  :root.lang-en [data-lang="th"]{ display:none; }
+  :root.lang-en [data-lang="en"]{ display:inline; }
+  :root.lang-en [data-lang="th"].block{ display:none; }
+  :root.lang-en [data-lang="en"].block{ display:block; }
+  .block{ display:block; }
+  [data-lang="th"].block{ display:block; }
+  [data-lang="en"].block{ display:none; }
+
+  /* ========== NAV ========== */
+  .nav{ position:sticky; top:0; z-index:100; background:rgba(247,248,253,.85); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--border); padding:14px 0; }
+  .nav-inner{ max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-logo{ font-weight:800; font-size:1.2rem; display:flex; align-items:center; gap:10px; color:var(--primary-darker); }
+  .nav-logo .mark{ width:32px; height:32px; border-radius:9px; background:linear-gradient(135deg,var(--blue-600),var(--grad-c)); display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-sm); }
+  .nav-logo .mark svg{ width:18px; height:18px; }
+  .nav-links{ display:flex; gap:28px; align-items:center; }
+  .nav-links a:not(.btn){ text-decoration:none; color:var(--ink-muted); font-weight:600; font-size:.95rem; position:relative; padding:4px 0; transition:color .2s; }
+  .nav-links a:not(.btn)::after{ content:''; position:absolute; left:0; bottom:-2px; width:0; height:2px; background:var(--primary); transition:width .25s var(--ease); }
+  .nav-links a:not(.btn):hover{ color:var(--primary-darker); }
+  .nav-links a:not(.btn):hover::after{ width:100%; }
+
+  .nav-toggle{ display:none; background:none; border:1.5px solid var(--border); border-radius:8px; padding:8px 10px; cursor:pointer; }
+  .nav-toggle svg{ width:20px; height:20px; display:block; }
+
+  .btn{ display:inline-flex; align-items:center; gap:8px; padding:11px 24px; border-radius:10px; font-weight:700; font-size:.95rem; text-decoration:none; cursor:pointer; border:none; transition:all .22s var(--ease); font-family:'Prompt',sans-serif; white-space:nowrap; }
+  .btn-primary{ background:var(--primary); color:#fff; box-shadow:0 4px 14px rgba(70,68,231,.28); }
+  .btn-primary:hover{ background:var(--primary-dark); transform:translateY(-2px); box-shadow:0 10px 24px rgba(70,68,231,.35); }
+  .btn-primary:active{ transform:translateY(0); }
+  .btn-outline{ background:transparent; color:var(--primary); border:2px solid var(--blue-200); }
+  .btn-outline:hover{ background:var(--blue-50); border-color:var(--primary); transform:translateY(-2px); }
+  .btn-lg{ padding:16px 38px; font-size:1.05rem; border-radius:12px; }
+  .btn-white{ background:#fff; color:var(--primary-dark); }
+  .btn-white:hover{ background:var(--blue-50); transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.18); }
+  .btn:disabled{ opacity:.6; cursor:not-allowed; transform:none !important; }
+
+  /* ========== SECTIONS ========== */
+  .section{ padding:96px 24px; }
+  .section-inner{ max-width:1120px; margin:0 auto; }
+  .section-label{ font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--primary); margin-bottom:14px; display:inline-flex; align-items:center; gap:8px; }
+  .section-label::before{ content:''; width:18px; height:2px; background:var(--primary); border-radius:2px; }
+  .text-center .section-label::before{ display:none; }
+  .text-center .section-label{ justify-content:center; }
+  .section-title{ font-size:clamp(1.9rem,3vw,2.6rem); font-weight:800; line-height:1.22; margin-bottom:18px; color:var(--primary-darker); letter-spacing:-.01em; }
+  .section-subtitle{ font-size:1.12rem; color:var(--ink-muted); max-width:660px; margin:0 auto 52px; }
+  .text-center{ text-align:center; }
+
+  /* Scroll reveal */
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+
+  /* ========== HERO ========== */
+  .hero{ position:relative; padding:88px 24px 64px; text-align:center; overflow:hidden; }
+  .hero::before{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background:
+      radial-gradient(60% 50% at 50% 0%, var(--blue-50) 0%, transparent 70%),
+      radial-gradient(1px 1px at 20px 30px, var(--blue-200) 1px, transparent 0),
+      radial-gradient(1px 1px at 80px 90px, var(--blue-200) 1px, transparent 0),
+      radial-gradient(1px 1px at 140px 50px, var(--blue-200) 1px, transparent 0);
+    background-size:auto, 90px 90px, 90px 90px, 90px 90px;
+  }
+  .hero-inner{ max-width:880px; margin:0 auto; }
+  .hero-eyebrow{ display:inline-flex; align-items:center; gap:8px; background:var(--blue-50); color:var(--primary-dark); border:1px solid var(--blue-200); border-radius:999px; padding:7px 18px; font-size:.85rem; font-weight:700; font-family:'Prompt',sans-serif; margin-bottom:22px; }
+  .hero-eyebrow .dot{ width:7px; height:7px; border-radius:50%; background:var(--positive); box-shadow:0 0 0 3px var(--positive-bg); }
+  .hero h1{ font-size:clamp(2.1rem,4.4vw,3.35rem); font-weight:800; line-height:1.18; margin-bottom:22px; color:var(--primary-darker); letter-spacing:-.015em; }
+  .hero h1 .hl{ background:linear-gradient(135deg,var(--blue-600),var(--grad-c)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .hero p{ font-size:1.18rem; color:var(--ink-muted); margin-bottom:38px; max-width:620px; margin-left:auto; margin-right:auto; }
+  .hero-buttons{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:56px; }
+
+  /* Signature hero visual: workshop workflow board — replaces generic gradient box */
+  .flow-board{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); padding:32px 28px 26px; max-width:840px; margin:0 auto; text-align:left; }
+  .flow-board-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; }
+  .flow-board-head .dots{ display:flex; gap:6px; }
+  .flow-board-head .dots span{ width:9px; height:9px; border-radius:50%; background:var(--blue-200); }
+  .flow-board-head .label{ font-size:.82rem; font-weight:700; color:var(--ink-muted); font-family:'Prompt',sans-serif; }
+  .flow-steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+  .flow-step{ position:relative; padding:18px 14px; text-align:center; }
+  .flow-step:not(:last-child)::after{
+    content:''; position:absolute; top:26px; right:-2px; width:calc(100% - 44px); height:2px;
+    background:repeating-linear-gradient(90deg, var(--blue-200) 0 6px, transparent 6px 12px);
+  }
+  .flow-step .num{ width:40px; height:40px; border-radius:50%; background:var(--blue-50); border:2px solid var(--blue-200); color:var(--primary-dark); display:flex; align-items:center; justify-content:center; font-size:1.2rem; margin:0 auto 12px; position:relative; z-index:1; transition:all .3s var(--ease); }
+  .flow-board.in-view .flow-step:nth-child(1) .num{ background:var(--primary); border-color:var(--primary); color:#fff; }
+  .flow-board.in-view .flow-step:nth-child(2) .num{ background:var(--primary); border-color:var(--primary); color:#fff; transition-delay:.15s; }
+  .flow-board.in-view .flow-step:nth-child(3) .num{ background:var(--primary); border-color:var(--primary); color:#fff; transition-delay:.3s; }
+  .flow-board.in-view .flow-step:nth-child(4) .num{ background:var(--primary); border-color:var(--primary); color:#fff; transition-delay:.45s; }
+  .flow-step h4{ font-family:'Prompt',sans-serif; font-size:.92rem; font-weight:700; color:var(--primary-darker); margin-bottom:4px; }
+  .flow-step p{ font-size:.8rem; color:var(--ink-muted); }
+  .flow-note{ margin-top:20px; padding-top:18px; border-top:1px dashed var(--border); font-size:.85rem; color:var(--ink-muted); text-align:center; }
+
+  /* ========== VALUE PROPS ========== */
+  .props-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px; }
+  .prop-card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius-md); padding:30px 26px; transition:all .25s var(--ease); }
+  .prop-card:hover{ box-shadow:var(--shadow-md); transform:translateY(-4px); border-color:var(--blue-200); }
+  .prop-icon{ width:52px; height:52px; border-radius:14px; background:var(--blue-50); display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:16px; }
+  .prop-card h3{ font-size:1.08rem; font-weight:700; margin-bottom:8px; color:var(--primary-darker); line-height:1.4; }
+  .prop-card p{ color:var(--ink-muted); font-size:.95rem; }
+
+  /* ========== FEATURES (2-col) ========== */
+  .features-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .features-text h2{ font-size:1.9rem; font-weight:800; margin-bottom:16px; color:var(--primary-darker); letter-spacing:-.01em; }
+  .features-text p{ color:var(--ink-muted); margin-bottom:14px; font-size:1.05rem; }
+  .features-list{ list-style:none; margin:22px 0; }
+  .features-list li{ padding:9px 0; font-size:1rem; position:relative; padding-left:32px; }
+  .features-list li::before{ content:'✓'; position:absolute; left:0; top:8px; width:20px; height:20px; border-radius:50%; background:var(--primary); color:#fff; font-size:.7rem; font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .features-visual{ background:linear-gradient(150deg,var(--blue-50) 0%, #F4EEFF 100%); border:1px solid var(--blue-100); border-radius:var(--radius-lg); min-height:340px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; font-size:3rem; color:var(--primary); padding:24px; }
+  .features-visual span.cap{ font-size:.92rem; font-weight:700; font-family:'Prompt',sans-serif; color:var(--primary-darker); }
+
+  /* ========== TESTIMONIALS ========== */
+  .testimonials-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; }
+  .testimonial-card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius-md); padding:34px; position:relative; transition:all .25s var(--ease); }
+  .testimonial-card:hover{ box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .testimonial-card::before{ content:'“'; position:absolute; top:18px; right:26px; font-size:3.2rem; font-family:Georgia,serif; color:var(--blue-100); line-height:1; }
+  .testimonial-card .industry{ font-size:.78rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; }
+  .testimonial-card .quote{ font-size:1.15rem; font-weight:700; line-height:1.5; margin-bottom:12px; color:var(--primary-darker); }
+  .testimonial-card .detail{ font-size:.9rem; color:var(--ink-muted); }
+
+  /* ========== PRICING ========== */
+  .pricing-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; max-width:820px; margin:0 auto; }
+  .pricing-card{ background:var(--card); border:2px solid var(--border); border-radius:var(--radius-lg); padding:38px 34px; text-align:center; transition:all .25s var(--ease); position:relative; }
+  .pricing-card:hover{ transform:translateY(-4px); }
+  .pricing-card.featured{ border-color:var(--primary); box-shadow:0 12px 36px rgba(70,68,231,.16); }
+  .pricing-card.featured::before{ content:attr(data-badge); position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--blue-600),var(--grad-c)); color:#fff; padding:6px 18px; border-radius:20px; font-size:.78rem; font-weight:700; font-family:'Prompt',sans-serif; white-space:nowrap; box-shadow:var(--shadow-sm); }
+  .pricing-card h3{ font-size:1.15rem; margin-bottom:6px; color:var(--primary-darker); font-weight:700; }
+  .pricing-card .price{ font-size:2.7rem; font-weight:800; margin:14px 0 4px; color:var(--primary-darker); }
+  .pricing-card .price-period{ color:var(--ink-muted); font-size:.92rem; margin-bottom:26px; }
+  .pricing-card .feature-list{ list-style:none; text-align:left; margin-bottom:28px; }
+  .pricing-card .feature-list li{ padding:8px 0; font-size:.95rem; padding-left:26px; position:relative; }
+  .pricing-card .feature-list li::before{ content:'✓'; position:absolute; left:0; color:var(--primary); font-weight:800; }
+
+  /* ========== CTA BANNER ========== */
+  .cta-banner{ background:linear-gradient(135deg,var(--blue-700),var(--grad-c) 120%); color:#fff; text-align:center; padding:68px 32px; border-radius:var(--radius-xl); position:relative; overflow:hidden; }
+  .cta-banner::before{ content:''; position:absolute; inset:0; background:radial-gradient(60% 100% at 90% 0%, rgba(255,255,255,.14), transparent 60%); }
+  .cta-banner *{ position:relative; }
+  .cta-banner h2{ font-size:clamp(1.6rem,2.6vw,2.1rem); font-weight:800; margin-bottom:12px; }
+  .cta-banner p{ opacity:.92; margin-bottom:30px; font-size:1.08rem; }
+
+  /* ========== FORM ========== */
+  .form-section{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:46px; max-width:680px; margin:0 auto; box-shadow:var(--shadow-md); }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px; }
+  .form-group{ display:flex; flex-direction:column; gap:7px; text-align:left; }
+  .form-group.full{ grid-column:1 / -1; }
+  .form-group label{ font-size:.88rem; font-weight:700; color:var(--primary-darker); }
+  .form-group input, .form-group select, .form-group textarea{ padding:12px 15px; border:1.5px solid var(--border); border-radius:9px; font-size:.95rem; font-family:inherit; transition:all .2s; background:#fff; color:var(--ink); }
+  .form-group input:hover, .form-group select:hover, .form-group textarea:hover{ border-color:var(--blue-300); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus{ outline:none; border-color:var(--primary); box-shadow:0 0 0 4px var(--blue-100); }
+  .form-group textarea{ resize:vertical; min-height:100px; }
+  .form-group.error input, .form-group.error select, .form-group.error textarea{ border-color:var(--negative); }
+  .form-group.error .field-error{ display:block; }
+  .field-error{ display:none; font-size:.8rem; color:var(--negative); font-weight:600; }
+  .form-consent{ font-size:.85rem; color:var(--ink-muted); margin:18px 0; line-height:1.6; text-align:left; }
+  .form-consent a{ color:var(--primary); font-weight:600; text-decoration:underline; }
+  .form-submit{ width:100%; padding:15px; font-size:1.05rem; margin-top:8px; justify-content:center; }
+  .form-submit .spinner{ display:none; width:16px; height:16px; border:2.5px solid rgba(255,255,255,.4); border-top-color:#fff; border-radius:50%; animation:spin .7s linear infinite; }
+  .form-submit.loading .spinner{ display:inline-block; }
+  .form-submit.loading .btn-label{ opacity:.85; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  .form-email{ text-align:center; margin-bottom:30px; color:var(--ink-muted); font-size:.95rem; }
+  .form-status{ display:none; align-items:flex-start; gap:12px; padding:16px 18px; border-radius:10px; font-size:.92rem; margin-top:18px; text-align:left; font-weight:600; }
+  .form-status.show{ display:flex; }
+  .form-status.success{ background:var(--positive-bg); color:#166534; }
+  .form-status.error{ background:var(--negative-bg); color:#991b1b; }
+  .hp-field{ position:absolute; left:-9999px; top:-9999px; }
+
+  /* ========== FAQ ========== */
+  .faq-list{ max-width:740px; margin:0 auto; }
+  .faq-item{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius-md); margin-bottom:12px; overflow:hidden; transition:box-shadow .2s; }
+  .faq-item:hover{ box-shadow:var(--shadow-sm); }
+  .faq-q{ width:100%; text-align:left; background:none; border:none; cursor:pointer; padding:22px 24px; font-family:inherit; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  .faq-q h4{ font-size:1.03rem; font-weight:700; color:var(--primary-darker); }
+  .faq-q .icon{ flex:none; width:26px; height:26px; border-radius:50%; background:var(--blue-50); color:var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:400; transition:transform .3s var(--ease); }
+  .faq-item[aria-expanded="true"] .icon{ transform:rotate(135deg); background:var(--primary); color:#fff; }
+  .faq-panel{ max-height:0; overflow:hidden; transition:max-height .35s var(--ease); }
+  .faq-panel-inner{ padding:0 24px 22px; color:var(--ink-muted); font-size:.96rem; }
+
+  /* ========== FOOTER ========== */
+  .footer{ border-top:1px solid var(--border); padding:36px 24px; text-align:center; background:var(--card); }
+  .footer-inner{ max-width:1120px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+  .footer-links{ display:flex; gap:26px; }
+  .footer-links a{ color:var(--ink-muted); text-decoration:none; font-size:.9rem; font-weight:600; transition:color .2s; }
+  .footer-links a:hover{ color:var(--primary); }
+  .footer-copy{ color:var(--ink-muted); font-size:.88rem; }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width:900px){
+    .flow-steps{ grid-template-columns:1fr 1fr; row-gap:22px; }
+    .flow-step:nth-child(2)::after{ display:none; }
+    .flow-step:not(:last-child)::after{ width:calc(100% - 20px); }
+  }
+  @media (max-width:768px){
+    .section{ padding:64px 20px; }
+    .section-title{ font-size:1.7rem; }
+    .hero{ padding-top:64px; }
+    .hero h1{ font-size:1.95rem; }
+    .features-grid{ grid-template-columns:1fr; gap:36px; }
+    .form-row{ grid-template-columns:1fr; }
+    .form-section{ padding:28px 22px; }
+    .nav-links{ position:fixed; top:64px; left:0; right:0; background:var(--card); border-bottom:1px solid var(--border); flex-direction:column; align-items:stretch; padding:16px 20px 22px; gap:14px; box-shadow:var(--shadow-md); transform:translateY(-12px); opacity:0; pointer-events:none; transition:all .22s var(--ease); }
+    .nav-links.open{ transform:translateY(0); opacity:1; pointer-events:auto; }
+    .nav-links a{ padding:10px 4px; }
+    .nav-toggle{ display:block; }
+    .testimonials-grid{ grid-template-columns:1fr; }
+    .pricing-grid{ grid-template-columns:1fr; }
+    .lang-switcher{ bottom:14px; right:14px; }
+    .flow-board{ padding:24px 18px 18px; }
+    .flow-steps{ grid-template-columns:1fr 1fr; }
+  }
+</style>
+
+<!-- Structured Data for AEO/GEO: helps Google AI Overviews, ChatGPT, Perplexity etc. extract accurate facts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "AI Workflow Workshop — เขียนคู่มือขั้นตอนการทำงาน",
+  "description": "Workshop เต็มวันที่ทีมงานลงมือเขียนคู่มือขั้นตอนการทำงานจริง เพื่อค้นหาปัญหาในกระบวนการทำงานและจับคู่กับ AI Solution ที่เหมาะสม โดยมีทีมผู้เชี่ยวชาญด้าน AI คอยดูแลตลอดการเรียนการสอน",
+  "provider": {
+    "@type": "Organization",
+    "name": "THCloud.AI",
+    "sameAs": "https://thcloud.ai/"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended",
+    "courseWorkload": "PT8H"
+  },
+  "offers": [
+    { "@type": "Offer", "name": "Plan S — 10 ท่าน", "price": "45000", "priceCurrency": "THB" },
+    { "@type": "Offer", "name": "Plan M — 20 ท่าน", "price": "65000", "priceCurrency": "THB" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Workshop นี้ใช้เวลานานแค่ไหน และจัดที่ไหนได้บ้าง",
+      "acceptedAnswer": { "@type": "Answer", "text": "Workshop เต็มวัน (1 วัน) จัดได้ทั้งรูปแบบ Onsite ที่บริษัทของคุณ หรือ Online ผ่านระบบประชุมทางไกล โดยทีมผู้เชี่ยวชาญจะคอยช่วยเหลือคุณ ตลอดการเรียนการสอน" }
+    },
+    {
+      "@type": "Question",
+      "name": "ผู้เข้าร่วมต้องมีพื้นฐาน AI มาก่อนไหม",
+      "acceptedAnswer": { "@type": "Answer", "text": "ไม่จำเป็น Workshop ออกแบบให้ลงมือทำตั้งแต่ต้น ไม่ต้องมีความรู้ AI มาก่อน เหมาะกับทีมงานและผู้บริหารทุกระดับ" }
+    },
+    {
+      "@type": "Question",
+      "name": "หลัง Workshop จบแล้ว ผู้เข้าร่วมได้อะไรกลับไปบ้าง",
+      "acceptedAnswer": { "@type": "Answer", "text": "ได้เอกสารคู่มือขั้นตอนการทำงาน (Work Instruction) ที่สมบูรณ์พร้อมใช้งานจริง แผน AI Solution Matching เฉพาะองค์กร Framework สำหรับวิเคราะห์ Workflow ต่อได้เอง และไฟล์ Slide/เอกสารประกอบทั้งหมด" }
+    },
+    {
+      "@type": "Question",
+      "name": "ราคา Workshop เริ่มต้นเท่าไหร่",
+      "acceptedAnswer": { "@type": "Answer", "text": "เริ่มต้นที่ ฿45,000 สำหรับกลุ่ม 10 ท่าน (Plan S), ฿65,000 สำหรับ 20 ท่าน (Plan M) ยิ่งจำนวนคนเยอะ ยิ่งประหยัดต่อหัวมากขึ้น หรือสอบถามราคาพิเศษถ้ามากกว่า 20 ท่าน" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content / ข้ามไปเนื้อหาหลัก</a>
+
+<!-- ==================== LANGUAGE SWITCHER ==================== -->
+<div class="lang-switcher" role="group" aria-label="Language switcher">
+  <button class="lang-btn active" onclick="switchLang('th')" aria-label="Switch to Thai" aria-pressed="true" id="btn-th">TH</button>
+  <button class="lang-btn" onclick="switchLang('en')" aria-label="Switch to English" aria-pressed="false" id="btn-en">EN</button>
+</div>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="mark" aria-hidden="true" style="background:none;">
+        <img src="data:image/png;base64,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" alt="" width="32" height="32" style="width:100%;height:100%;border-radius:9px;display:block;">
+      </span>
+      THCloud.AI
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#features"><span data-lang="th" class="block">ฟีเจอร์</span><span data-lang="en" class="block">Features</span></a>
+      <a href="#testimonials"><span data-lang="th" class="block">ผลลัพธ์</span><span data-lang="en" class="block">Results</span></a>
+      <a href="#pricing"><span data-lang="th" class="block">ราคา</span><span data-lang="en" class="block">Pricing</span></a>
+      <a href="#contact" class="btn btn-primary"><span data-lang="th" class="block">จองที่นั่ง Workshop</span><span data-lang="en" class="block">Book a Workshop</span></a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ==================== 1. HERO ==================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span> <span data-lang="th" class="block">AI Workflow Workshop</span><span data-lang="en" class="block">AI Workflow Workshop</span></div>
+    <h1><span data-lang="th" class="block">รู้ไหมว่าปัญหาจริงในองค์กรคุณอยู่ตรงไหน? <span class="hl">Workshop นี้จะทำให้คุณเห็นและแก้ได้จริงด้วย AI</span></span><span data-lang="en" class="block">Find Your Team's Real Bottleneck — and <span class="hl">Fix It with AI, in One Day</span></span></h1>
+    <p><span data-lang="th" class="block">Workshop เต็มวันที่ทีมของคุณลงมือเขียนคู่มือขั้นตอนการทำงานจริง ไม่ใช่แค่นั่งฟัง — กลับบ้านพร้อม Solution ของตัวเอง โดยมีทีมผู้เชี่ยวชาญด้าน AI คอย Guide ตลอด Session</span><span data-lang="en" class="block">A full-day, hands-on workshop where your team builds a real, step-by-step work instruction — not just theory. Leave with your own AI solution, guided by expert facilitators throughout.</span></p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary btn-lg"><span data-lang="th" class="block">จองที่นั่ง Workshop สำหรับทีมคุณ →</span><span data-lang="en" class="block">Book a Workshop for Your Team →</span></a>
+      <a href="#pricing" class="btn btn-outline btn-lg"><span data-lang="th" class="block">ดูแพ็กเกจและราคา</span><span data-lang="en" class="block">See Pricing</span></a>
+    </div>
+
+    <!-- Signature visual: the workshop's real workflow, not a stock illustration -->
+    <div class="flow-board reveal" data-observe>
+      <div class="flow-board-head">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="label"><span data-lang="th" class="block">ภาพรวม Workshop 1 วัน</span><span data-lang="en" class="block">Your one-day workshop, at a glance</span></div>
+      </div>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="num">🔍</div>
+          <h4><span data-lang="th" class="block">หาปัญหา</span><span data-lang="en" class="block">Find</span></h4>
+          <p><span data-lang="th" class="block">ค้นหาจุดติดขัดจริง</span><span data-lang="en" class="block">Spot real bottlenecks</span></p>
+        </div>
+        <div class="flow-step">
+          <div class="num">📝</div>
+          <h4><span data-lang="th" class="block">เขียนขั้นตอน</span><span data-lang="en" class="block">Write</span></h4>
+          <p><span data-lang="th" class="block">คู่มือ Work Instruction</span><span data-lang="en" class="block">Real work instructions</span></p>
+        </div>
+        <div class="flow-step">
+          <div class="num">🤖</div>
+          <h4><span data-lang="th" class="block">จับคู่ AI</span><span data-lang="en" class="block">Match</span></h4>
+          <p><span data-lang="th" class="block">เลือก Solution ที่ใช่</span><span data-lang="en" class="block">The right AI solution</span></p>
+        </div>
+        <div class="flow-step">
+          <div class="num">📄</div>
+          <h4><span data-lang="th" class="block">ได้ Roadmap</span><span data-lang="en" class="block">Leave With</span></h4>
+          <p><span data-lang="th" class="block">แผนพร้อมใช้จริง</span><span data-lang="en" class="block">A ready-to-use plan</span></p>
+        </div>
+      </div>
+      <div class="flow-note"><span data-lang="th" class="block">📷 ภาพบรรยากาศ Workshop จริง — เร็วๆ นี้</span><span data-lang="en" class="block">📷 Real workshop photos — coming soon</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 2. VALUE PROPOSITION ==================== -->
+<section class="section" id="features">
+  <div class="section-inner text-center reveal" data-observe>
+    <div class="section-label"><span data-lang="th" class="block">เหมาะกับใคร</span><span data-lang="en" class="block">WHO IT'S FOR</span></div>
+    <h2 class="section-title"><span data-lang="th" class="block">Workshop นี้ออกแบบมาสำหรับ...</span><span data-lang="en" class="block">Built for Teams Like Yours</span></h2>
+    <p class="section-subtitle"><span data-lang="th" class="block">ไม่ใช่แค่นั่งฟัง — แต่ลงมือทำจริงและกลับบ้านพร้อม Solution ของตัวเอง</span><span data-lang="en" class="block">Not just a lecture — hands-on, and you leave with your own solution.</span></p>
+    <div class="props-grid">
+      <div class="prop-card">
+        <div class="prop-icon">🔍</div>
+        <h3><span data-lang="th" class="block">องค์กรที่อยากรู้ว่า Workflow ไหนมีปัญหา</span><span data-lang="en" class="block">Orgs Wanting to Find Their Real Bottlenecks</span></h3>
+        <p><span data-lang="th" class="block">รู้ว่ามีปัญหา แต่ยังไม่รู้ว่า AI ตัวไหนแก้ได้ Workshop นี้ช่วยหาคำตอบร่วมกัน</span><span data-lang="en" class="block">You know something's broken but aren't sure which AI tool fixes it — we work through it together.</span></p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">👥</div>
+        <h3><span data-lang="th" class="block">ทีมงานที่ต้องการเห็นภาพรวมปัญหาจริง</span><span data-lang="en" class="block">Teams Who Want the Real Picture</span></h3>
+        <p><span data-lang="th" class="block">เห็นภาพรวมปัญหาจริงขององค์กรตัวเอง ไม่ใช่แค่ทฤษฎีทั่วไป</span><span data-lang="en" class="block">See your organization's actual bottlenecks — not generic theory.</span></p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">🧭</div>
+        <h3><span data-lang="th" class="block">ผู้บริหารที่ต้องการให้ทีมมีส่วนร่วม</span><span data-lang="en" class="block">Executives Who Want Team Buy-In</span></h3>
+        <p><span data-lang="th" class="block">ให้ทีมงานเข้าใจและมีส่วนร่วมจริงในการนำ AI เข้าองค์กร ไม่ใช่แค่สั่งจากบนลงล่าง</span><span data-lang="en" class="block">Get your team genuinely engaged in AI adoption — not just a top-down mandate.</span></p>
+      </div>
+      <div class="prop-card">
+        <div class="prop-icon">⚡</div>
+        <h3><span data-lang="th" class="block">องค์กรที่ต้องการ Quick Win จาก AI</span><span data-lang="en" class="block">Orgs Wanting a Fast, Real Win</span></h3>
+        <p><span data-lang="th" class="block">อยากเห็นผลจริงจากการนำ AI มาแก้ปัญหา ไม่ใช่แค่ concept บนกระดาษ</span><span data-lang="en" class="block">Want to see a real result from applying AI — not just a concept on paper.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. FEATURES / BENEFITS ==================== -->
+<section class="section">
+  <div class="section-inner">
+    <div class="features-grid reveal" data-observe>
+      <div class="features-text">
+        <div class="section-label"><span data-lang="th" class="block">ระหว่าง Workshop</span><span data-lang="en" class="block">During the Workshop</span></div>
+        <h2><span data-lang="th" class="block">ลงมือทำจริง ไม่ใช่แค่นั่งฟัง</span><span data-lang="en" class="block">Hands-On, Not a Lecture</span></h2>
+        <p><span data-lang="th" class="block">Workshop เต็มวันที่ออกแบบมาให้ผู้เข้าร่วมลงมือเขียนคู่มือขั้นตอนการทำงานจริง เพื่อค้นหาปัญหาที่แท้จริงในกระบวนการทำงาน และจับคู่กับ AI Solution ที่เหมาะสม โดยมีทีมผู้เชี่ยวชาญ ช่วย Guide ตลอด Session</span><span data-lang="en" class="block">A full-day workshop where participants build a real, step-by-step work instruction to uncover actual process bottlenecks and match them with the right AI solution — guided by expert facilitators throughout.</span></p>
+        <ul class="features-list">
+          <li><span data-lang="th" class="block">ลงมือเขียนคู่มือขั้นตอนการทำงานจริงของตัวเอง ไม่ใช่ตัวอย่างสมมติ</span><span data-lang="en" class="block">Write a real, step-by-step work instruction for your own workflow — not a hypothetical example.</span></li>
+          <li><span data-lang="th" class="block">Facilitator ผู้เชี่ยวชาญด้าน AI คอย Guide ตลอด Session</span><span data-lang="en" class="block">Expert AI facilitators guide you throughout the session.</span></li>
+          <li><span data-lang="th" class="block">จับคู่ปัญหาที่เจอกับ AI Solution ที่เหมาะสมแบบเรียลไทม์</span><span data-lang="en" class="block">Match your bottlenecks to the right AI solution in real time.</span></li>
+          <li><span data-lang="th" class="block">จัดได้ทั้ง Online และ Onsite ที่บริษัทคุณ</span><span data-lang="en" class="block">Available both online and onsite at your office.</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="margin-top:8px;"><span data-lang="th" class="block">จองที่นั่ง Workshop →</span><span data-lang="en" class="block">Book a Workshop →</span></a>
+      </div>
+      <div class="features-visual" style="padding:0;overflow:hidden;position:relative;">
+        <img src="images/workshop-hands-on.jpg" alt="ทีมงานร่วมกันวิเคราะห์และลงมือเขียนขั้นตอนการทำงานจริงระหว่าง Workshop" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+    <div class="features-grid reveal" data-observe style="margin-top:88px;">
+      <div class="features-visual" style="order:2;padding:0;overflow:hidden;position:relative;">
+        <img src="images/workshop-output.jpg" alt="สไลด์ AI Transformation Corporate Training ของ THCloud.AI ระหว่างการอบรม" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="features-text" style="order:1;">
+        <div class="section-label"><span data-lang="th" class="block">หลัง Workshop จบ</span><span data-lang="en" class="block">After the Workshop</span></div>
+        <h2><span data-lang="th" class="block">กลับบ้านพร้อม Solution ของตัวเอง</span><span data-lang="en" class="block">Leave with Your Own Solution</span></h2>
+        <p><span data-lang="th" class="block">ไม่ใช่แค่ความรู้ — แต่เป็นเอกสารและแผนที่นำไปใช้ได้จริงทันทีหลัง Workshop จบ</span><span data-lang="en" class="block">Not just knowledge — real, usable documents and a plan you can act on immediately.</span></p>
+        <ul class="features-list">
+          <li><span data-lang="th" class="block">📄 คู่มือขั้นตอนการทำงาน (Work Instruction) ฉบับสมบูรณ์ พร้อมใช้งานจริง — บางองค์กรเรียกเอกสารนี้ว่า QP/WI</span><span data-lang="en" class="block">A complete, ready-to-use work instruction document</span></li>
+          <li><span data-lang="th" class="block">🧠 Framework สำหรับวิเคราะห์ Workflow ต่อได้เอง</span><span data-lang="en" class="block">A framework to keep analyzing workflows on your own</span></li>
+          <li><span data-lang="th" class="block">🤖 AI Solution Matching — แผนการนำ AI เข้ามาแก้ปัญหาเฉพาะองค์กรคุณ</span><span data-lang="en" class="block">AI Solution Matching tailored to your organization</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" style="margin-top:8px;"><span data-lang="th" class="block">ขอรายละเอียด Workshop →</span><span data-lang="en" class="block">Request Workshop Details →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4. TESTIMONIALS ==================== -->
+<section class="section" id="testimonials" style="background:#fff;">
+  <div class="section-inner text-center reveal" data-observe>
+    <div class="section-label"><span data-lang="th" class="block">ทำไมต้องเลือกเรา</span><span data-lang="en" class="block">Why Choose Us</span></div>
+    <h2 class="section-title"><span data-lang="th" class="block">ไม่ได้แค่บอกว่าต้องใช้ AI — เราลงมือวิเคราะห์จริงกับทีมคุณ</span><span data-lang="en" class="block">Not Just AI Advice — We Analyze Alongside Your Team</span></h2>
+    <p class="section-subtitle"><span data-lang="th" class="block">เคยจัด Agentic AI Workshop ให้กับองค์กรอย่าง การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย (EGAT) มาแล้ว</span><span data-lang="en" class="block">Previously delivered an Agentic AI Workshop for the Electricity Generating Authority of Thailand (EGAT).</span></p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="industry"><span data-lang="th" class="block">ลงมือทำจริง</span><span data-lang="en" class="block">Hands-On Session</span></div>
+        <div class="quote"><span data-lang="th" class="block">วิเคราะห์ร่วมกันใน Session ไม่ใช่แค่ส่ง Report มาให้</span><span data-lang="en" class="block">We analyze together in the session — not just hand you a report.</span></div>
+        <div class="detail"><span data-lang="th" class="block">Facilitator ผู้เชี่ยวชาญด้าน AI คอย Guide ตลอด Workshop</span><span data-lang="en" class="block">Expert AI facilitators guide the entire workshop</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="industry"><span data-lang="th" class="block">Match ให้ตรงจุด</span><span data-lang="en" class="block">Tailored Matching</span></div>
+        <div class="quote"><span data-lang="th" class="block">Match Solution ให้ตรงกับปัญหา ไม่ขาย Tool เกินจำเป็น</span><span data-lang="en" class="block">We match solutions to your actual problems — no unnecessary tools.</span></div>
+        <div class="detail"><span data-lang="th" class="block">ทีม AI Specialist มีประสบการณ์จริงในหลาย Industry</span><span data-lang="en" class="block">AI specialists with real experience across industries</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="industry"><span data-lang="th" class="block">ใช้ได้จริงทันที</span><span data-lang="en" class="block">Immediately Actionable</span></div>
+        <div class="quote"><span data-lang="th" class="block">Roadmap ที่ได้รับนำไปใช้ได้จริงทันที</span><span data-lang="en" class="block">The roadmap you receive is ready to act on right away.</span></div>
+        <div class="detail"><span data-lang="th" class="block">กลับบ้านพร้อมคู่มือขั้นตอนการทำงานและ AI Solution ของตัวเองจริงๆ</span><span data-lang="en" class="block">Leave with your own real work instruction and AI solution</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. PRICING ==================== -->
+<section class="section" id="pricing">
+  <div class="section-inner text-center reveal" data-observe>
+    <div class="section-label"><span data-lang="th" class="block">ราคา</span><span data-lang="en" class="block">Pricing</span></div>
+    <h2 class="section-title"><span data-lang="th" class="block">เลือกแผนที่เหมาะกับองค์กรคุณ</span><span data-lang="en" class="block">Choose the Plan That Fits</span></h2>
+    <p class="section-subtitle"><span data-lang="th" class="block">ยิ่งคนเยอะ ยิ่งประหยัด สูงสุดถึง 61% เทียบราคาปกติ ฿6,900/คน</span><span data-lang="en" class="block">The bigger your group, the more you save — up to 61% off the standard ฿6,900/person rate.</span></p>
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <h3>Plan S — 10 <span data-lang="th" class="block" style="display:inline;">ท่าน</span><span data-lang="en" class="block" style="display:inline;">people</span></h3>
+        <div class="price">฿45,000</div>
+        <div class="price-period"><span data-lang="th" class="block">ราคาปกติ ฿69,000 · ประหยัด ฿24,000</span><span data-lang="en" class="block">Regular price ฿69,000 · Save ฿24,000</span></div>
+        <ul class="feature-list">
+          <li><span data-lang="th" class="block">Workshop เต็มวัน 1 วัน</span><span data-lang="en" class="block">Full-day, 1-day workshop</span></li>
+          <li><span data-lang="th" class="block">คู่มือขั้นตอนการทำงาน + AI Solution Matching</span><span data-lang="en" class="block">Work Instruction Document + AI Solution Matching</span></li>
+          
+        </ul>
+        <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;"><span data-lang="th" class="block">เริ่มต้นเลย</span><span data-lang="en" class="block">Get Started</span></a>
+      </div>
+
+      <div class="pricing-card featured" data-badge="แนะนำ | Recommended">
+        <h3>Plan M — 20 <span data-lang="th" class="block" style="display:inline;">ท่าน</span><span data-lang="en" class="block" style="display:inline;">people</span></h3>
+        <div class="price">฿65,000</div>
+        <div class="price-period"><span data-lang="th" class="block">ราคาปกติ ฿138,000 · ประหยัด ฿73,000</span><span data-lang="en" class="block">Regular price ฿138,000 · Save ฿73,000</span></div>
+        <ul class="feature-list">
+          <li><span data-lang="th" class="block">Workshop เต็มวัน 1 วัน</span><span data-lang="en" class="block">Full-day, 1-day workshop</span></li>
+          <li><span data-lang="th" class="block">คู่มือขั้นตอนการทำงาน + AI Solution Matching</span><span data-lang="en" class="block">Work Instruction Document + AI Solution Matching</span></li>
+          <li><span data-lang="th" class="block">คุ้มค่าต่อหัวมากที่สุด</span><span data-lang="en" class="block">Best value per person</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="width:100%; justify-content:center;"><span data-lang="th" class="block">เริ่มต้นเลย</span><span data-lang="en" class="block">Get Started</span></a>
+      </div>
+
+    </div>
+    <p style="font-size:.85rem;color:var(--ink-muted);margin-top:26px;"><span data-lang="th" class="block">ต้องการวิเคราะห์เชิงลึกแบบ 1:1 แทน Workshop กลุ่ม? ดูบริการ AI Consultation ของเราแยกต่างหาก</span><span data-lang="en" class="block">Need 1:1 deep-dive analysis instead of a group workshop? See our separate AI Consultation service.</span></p>
+  </div>
+</section>
+
+<!-- ==================== 6. CTA BANNER ==================== -->
+<section class="section" style="padding-top:0;">
+  <div class="section-inner reveal" data-observe>
+    <div class="cta-banner">
+      <h2><span data-lang="th" class="block">พร้อมหาปัญหาที่แท้จริงขององค์กรคุณหรือยัง?</span><span data-lang="en" class="block">Ready to Find Your Team's Real Bottleneck?</span></h2>
+      <p><span data-lang="th" class="block">ที่นั่งมีจำนวนจำกัด เพื่อให้ทีมงานของเราดูแลได้อย่างทั่วถึง รีบจองเลย!</span><span data-lang="en" class="block">Seats are limited per session so facilitators can give everyone attention.</span></p>
+      <a href="#contact" class="btn btn-white btn-lg"><span data-lang="th" class="block">จองที่นั่ง Workshop →</span><span data-lang="en" class="block">Book a Workshop →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. LEAD CAPTURE FORM ==================== -->
+<section class="section" id="contact" style="background:#fff;">
+  <div class="section-inner text-center reveal" data-observe>
+    <div class="section-label"><span data-lang="th" class="block">เริ่มต้นวันนี้</span><span data-lang="en" class="block">Get Started</span></div>
+    <h2 class="section-title"><span data-lang="th" class="block">สนใจจอง Workshop ให้ทีมคุณ?</span><span data-lang="en" class="block">Interested in Booking a Workshop for Your Team?</span></h2>
+    <p class="section-subtitle"><span data-lang="th" class="block">กรอกแบบฟอร์มด้านล่าง ทีมงานจะติดต่อกลับภายใน 24 ชั่วโมงเพื่อนัดวันและยืนยันรายละเอียด</span><span data-lang="en" class="block">Fill out the form below and our team will get back to you within 24 hours to schedule and confirm details.</span></p>
+    <div class="form-email">📧 hello@thcloud.ai | 📞 091 889 5941</div>
+
+    <div class="form-section">
+      <form id="workshopForm" novalidate>
+        <!-- Honeypot anti-spam field (kept hidden from real users) -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" data-field="name">
+            <label for="name"><span data-lang="th" class="block">ชื่อ - นามสกุล *</span><span data-lang="en" class="block">Full Name *</span></label>
+            <input type="text" id="name" name="name" required aria-describedby="err-name">
+            <span class="field-error" id="err-name"><span data-lang="th" class="block">กรุณากรอกชื่อ - นามสกุล</span><span data-lang="en" class="block">Please enter your full name</span></span>
+          </div>
+          <div class="form-group" data-field="company">
+            <label for="company"><span data-lang="th" class="block">บริษัท *</span><span data-lang="en" class="block">Company *</span></label>
+            <input type="text" id="company" name="company" required aria-describedby="err-company">
+            <span class="field-error" id="err-company"><span data-lang="th" class="block">กรุณากรอกชื่อบริษัท</span><span data-lang="en" class="block">Please enter your company name</span></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group" data-field="email">
+            <label for="email"><span data-lang="th" class="block">อีเมลองค์กร *</span><span data-lang="en" class="block">Work Email *</span></label>
+            <input type="email" id="email" name="email" required aria-describedby="err-email">
+            <span class="field-error" id="err-email"><span data-lang="th" class="block">กรุณากรอกอีเมลให้ถูกต้อง</span><span data-lang="en" class="block">Please enter a valid email address</span></span>
+          </div>
+          <div class="form-group" data-field="phone">
+            <label for="phone"><span data-lang="th" class="block">เบอร์โทรติดต่อ *</span><span data-lang="en" class="block">Phone Number *</span></label>
+            <input type="tel" id="phone" name="phone" required aria-describedby="err-phone">
+            <span class="field-error" id="err-phone"><span data-lang="th" class="block">กรุณากรอกเบอร์โทรให้ถูกต้อง</span><span data-lang="en" class="block">Please enter a valid phone number</span></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="position"><span data-lang="th" class="block">ตำแหน่งงาน</span><span data-lang="en" class="block">Job Position</span></label>
+            <select id="position" name="position">
+              <option value="" disabled selected><span data-lang="th" class="block">เลือกตำแหน่ง</span><span data-lang="en" class="block">Select your role</span></option>
+              <option value="c-suite"><span data-lang="th" class="block">ผู้บริหารระดับสูง / C-Suite / Director</span><span data-lang="en" class="block">Executive / C-Suite / Director</span></option>
+              <option value="owner"><span data-lang="th" class="block">เจ้าของกิจการ / ผู้ประกอบการ</span><span data-lang="en" class="block">Business Owner / Entrepreneur</span></option>
+              <option value="manager"><span data-lang="th" class="block">ผู้จัดการ / หัวหน้าแผนก</span><span data-lang="en" class="block">Manager / Head of Department</span></option>
+              <option value="hr"><span data-lang="th" class="block">HR / L&D / พัฒนาบุคลากร</span><span data-lang="en" class="block">HR / L&D / People Development</span></option>
+              <option value="staff"><span data-lang="th" class="block">พนักงาน / Specialist</span><span data-lang="en" class="block">Staff / Specialist</span></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="employees"><span data-lang="th" class="block">จำนวนพนักงานในองค์กร</span><span data-lang="en" class="block">Number of Employees</span></label>
+            <select id="employees" name="employees">
+              <option value="" disabled selected><span data-lang="th" class="block">เลือกช่วง</span><span data-lang="en" class="block">Select range</span></option>
+              <option value="1-50"><span data-lang="th" class="block">น้อยกว่า 50 คน</span><span data-lang="en" class="block">Less than 50</span></option>
+              <option value="51-350"><span data-lang="th" class="block">51 - 350 คน</span><span data-lang="en" class="block">51 - 350</span></option>
+              <option value="351-5000"><span data-lang="th" class="block">351 - 5,000 คน</span><span data-lang="en" class="block">351 - 5,000</span></option>
+              <option value="5000+"><span data-lang="th" class="block">มากกว่า 5,000 คน</span><span data-lang="en" class="block">More than 5,000</span></option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="plan"><span data-lang="th" class="block">สนใจแพ็กเกจไหน (ประมาณจำนวนผู้เข้าร่วม)</span><span data-lang="en" class="block">Which plan interests you (approx. participant count)</span></label>
+            <select id="plan" name="plan">
+              <option value="" disabled selected><span data-lang="th" class="block">เลือกแพ็กเกจ</span><span data-lang="en" class="block">Select a plan</span></option>
+              <option value="plan-s"><span data-lang="th" class="block">Plan S — 10 ท่าน (฿45,000)</span><span data-lang="en" class="block">Plan S — 10 people (฿45,000)</span></option>
+              <option value="plan-m"><span data-lang="th" class="block">Plan M — 20 ท่าน (฿65,000)</span><span data-lang="en" class="block">Plan M — 20 people (฿65,000)</span></option>
+              <option value="unsure"><span data-lang="th" class="block">ยังไม่แน่ใจ / อยากปรึกษาก่อน</span><span data-lang="en" class="block">Not sure yet / want to discuss first</span></option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="message"><span data-lang="th" class="block">ข้อความ / คำถามเพิ่มเติม</span><span data-lang="en" class="block">Message / Additional Questions</span></label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="form-consent">
+          <span data-lang="th" class="block">ข้อมูลส่วนบุคคลทั้งหมดที่ให้ไว้ในแบบฟอร์มนี้ จะนำไปใช้เพื่อวัตถุประสงค์ในการติดต่อท่านเพื่อแจ้งข้อมูลเพิ่มเติมและประมวลผลตามคำขอของท่านเท่านั้น <a href="#">อ่านนโยบายความเป็นส่วนตัว</a></span>
+          <span data-lang="en" class="block">All personal data provided in this form will be used solely for the purpose of contacting you with additional information and processing per your request. <a href="#">Read our Privacy Policy</a></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+          <span class="spinner" aria-hidden="true"></span>
+          <span class="btn-label">
+            <span data-lang="th" class="block">ส่งคำขอจอง Workshop →</span>
+            <span data-lang="en" class="block">Submit Workshop Request →</span>
+          </span>
+        </button>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. FAQ ==================== -->
+<section class="section">
+  <div class="section-inner reveal" data-observe>
+    <div class="text-center" style="margin-bottom:48px;">
+      <div class="section-label"><span data-lang="th" class="block">คำถามที่พบบ่อย</span><span data-lang="en" class="block">FAQ</span></div>
+      <h2 class="section-title"><span data-lang="th" class="block">คำถามที่พบบ่อย</span><span data-lang="en" class="block">Frequently Asked Questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" aria-expanded="false">
+        <button class="faq-q" aria-controls="faq-1">
+          <h4><span data-lang="th" class="block">Workshop นี้ใช้เวลานานแค่ไหน และจัดที่ไหนได้บ้าง?</span><span data-lang="en" class="block">How long is the workshop and where can it be held?</span></h4>
+          <span class="icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" id="faq-1">
+          <div class="faq-panel-inner"><span data-lang="th" class="block">Workshop เต็มวัน (1 วัน) จัดได้ทั้งรูปแบบ Onsite ที่บริษัทของคุณ หรือ Online ผ่านระบบประชุมทางไกล ทีม Facilitator จะ Guide ตลอด Session</span><span data-lang="en" class="block">A full-day, 1-day workshop, available both onsite at your office or online via video conferencing. Facilitators guide the entire session.</span></div>
+        </div>
+      </div>
+      <div class="faq-item" aria-expanded="false">
+        <button class="faq-q" aria-controls="faq-2">
+          <h4><span data-lang="th" class="block">ผู้เข้าร่วมต้องมีพื้นฐาน AI มาก่อนไหม?</span><span data-lang="en" class="block">Do participants need prior AI experience?</span></h4>
+          <span class="icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" id="faq-2">
+          <div class="faq-panel-inner"><span data-lang="th" class="block">ไม่จำเป็น Workshop ออกแบบให้ลงมือทำตั้งแต่ต้น ไม่ต้องมีความรู้ AI มาก่อน เหมาะกับทีมงานและผู้บริหารทุกระดับ</span><span data-lang="en" class="block">Not at all. The workshop is designed to be hands-on from the start — no prior AI knowledge needed. Suitable for staff and executives at every level.</span></div>
+        </div>
+      </div>
+      <div class="faq-item" aria-expanded="false">
+        <button class="faq-q" aria-controls="faq-3">
+          <h4><span data-lang="th" class="block">หลัง Workshop จบแล้ว ผู้เข้าร่วมได้อะไรกลับไปบ้าง?</span><span data-lang="en" class="block">What do participants take home after the workshop?</span></h4>
+          <span class="icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" id="faq-3">
+          <div class="faq-panel-inner"><span data-lang="th" class="block">ได้เอกสารคู่มือขั้นตอนการทำงาน (Work Instruction) ที่สมบูรณ์พร้อมใช้งานจริง แผน AI Solution Matching เฉพาะองค์กร Framework สำหรับวิเคราะห์ Workflow ต่อได้เอง และไฟล์ Slide/เอกสารประกอบทั้งหมด</span><span data-lang="en" class="block">A complete, ready-to-use work instruction document, an AI Solution Matching plan tailored to your org, a framework to keep analyzing workflows on your own, and all slides/materials used.</span></div>
+        </div>
+      </div>
+      <div class="faq-item" aria-expanded="false">
+        <button class="faq-q" aria-controls="faq-4">
+          <h4><span data-lang="th" class="block">ราคา Workshop เริ่มต้นเท่าไหร่?</span><span data-lang="en" class="block">What's the starting price for the workshop?</span></h4>
+          <span class="icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" id="faq-4">
+          <div class="faq-panel-inner"><span data-lang="th" class="block">เริ่มต้นที่ ฿45,000 สำหรับกลุ่ม 10 ท่าน (Plan S), ฿65,000 สำหรับ 20 ท่าน (Plan M) หรือสอบถามรายละเอียดเพิ่มเติม 📞 091 889 5941 </span><span data-lang="en" class="block">Starting at ฿45,000 for a group of 10 (Plan S), ฿65,000 for 20 (Plan M), and for more information called 📞 +66 91 889 5941.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#"><span data-lang="th" class="block">ข้อกำหนดและเงื่อนไข</span><span data-lang="en" class="block">Terms and Conditions</span></a>
+      <a href="#"><span data-lang="th" class="block">นโยบายความเป็นส่วนบุคคล</span><span data-lang="en" class="block">Privacy Policy</span></a>
+      <a href="mailto:hello@thcloud.ai"><span data-lang="th" class="block">ติดต่อเรา</span><span data-lang="en" class="block">Contact Us</span></a>
+    </div>
+    <div class="footer-copy">© THCloud.AI</div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   LANGUAGE SWITCH
+   ============================================================ */
+function switchLang(lang) {
+  document.documentElement.classList.toggle('lang-en', lang === 'en');
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    var isActive = btn.id === 'btn-' + lang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
+  document.querySelectorAll('select option').forEach(function (opt) {
+    var th = opt.querySelector('[data-lang="th"]');
+    var en = opt.querySelector('[data-lang="en"]');
+    if (th && en) {
+      opt.textContent = lang === 'th' ? th.textContent : en.textContent;
+      th.style.display = lang === 'th' ? 'inline' : 'none';
+      en.style.display = lang === 'en' ? 'inline' : 'none';
+    }
+  });
+  try { localStorage.setItem('lang', lang); } catch (e) {}
+}
+(function () {
+  var saved = 'th';
+  try { saved = localStorage.getItem('lang') || 'th'; } catch (e) {}
+  switchLang(saved);
+})();
+
+/* ============================================================
+   MOBILE NAV TOGGLE
+   ============================================================ */
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+(function () {
+  var items = document.querySelectorAll('[data-observe]');
+  if (!('IntersectionObserver' in window) || items.length === 0) {
+    items.forEach(function (el) { el.classList.add('in-view'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
+/* ============================================================
+   FAQ ACCORDION (accessible, button-based)
+   ============================================================ */
+(function () {
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-panel');
+    btn.addEventListener('click', function () {
+      var isOpen = item.getAttribute('aria-expanded') === 'true';
+      item.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      panel.style.maxHeight = isOpen ? null : panel.scrollHeight + 'px';
+    });
+  });
+})();
+
+/* ============================================================
+   AD CONVERSION TRACKING — fires once, only after a successful
+   form submission. Safe no-ops if a pixel is blocked/missing
+   (ad blockers, consent not yet given, etc.).
+   ============================================================ */
+function trackLeadConversion(payload) {
+  // GA4 — generic "generate_lead" event, shows up in GA4 + can be
+  // imported into Google Ads as a conversion action.
+  if (typeof gtag === 'function') {
+    gtag('event', 'generate_lead', {
+      currency: 'THB',
+      plan: payload.plan || '',
+      value: 0
+    });
+    // Google Ads conversion — replace with your real conversion label
+    // from Google Ads > Tools > Conversions > (your action) > Tag setup.
+    gtag('event', 'conversion', {
+      send_to: 'AW-XXXXXXXXXX/YOUR_CONVERSION_LABEL'
+    });
+  }
+
+  // Meta Pixel — standard "Lead" event.
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead', {
+      content_name: 'AI Workflow Workshop',
+      content_category: payload.plan || ''
+    });
+  }
+}
+
+/* ============================================================
+   LEAD FORM: validation + UTM capture + submit to Google Sheets
+   via Google Apps Script Web App.
+   ============================================================ */
+(function () {
+  // TODO: replace with your deployed Google Apps Script Web App URL
+  // (Deploy > New deployment > Web app > Execute as: Me > Who has access: Anyone)
+  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycLaHQ4vmA9QySZBQCMRd7LsPgto3C_PDdgzHZN5PAGDBhg305T4XgZBPwNxiabaY9/exec';
+
+  var form = document.getElementById('workshopForm');
+  if (!form) return;
+  var submitBtn = document.getElementById('submitBtn');
+  var statusBox = document.getElementById('formStatus');
+
+  var currentLang = function () {
+    return document.documentElement.classList.contains('lang-en') ? 'en' : 'th';
+  };
+
+  function getUTMParams() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+    var utm = {};
+    keys.forEach(function (k) {
+      var v = params.get(k);
+      if (v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+      utm[k] = v || (function () { try { return sessionStorage.getItem(k) || ''; } catch (e) { return ''; } })();
+    });
+    return utm;
+  }
+
+  function showStatus(type, thMsg, enMsg) {
+    statusBox.className = 'form-status show ' + type;
+    statusBox.textContent = currentLang() === 'en' ? enMsg : thMsg;
+    statusBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function clearErrors() {
+    form.querySelectorAll('.form-group.error').forEach(function (g) { g.classList.remove('error'); });
+  }
+
+  function setFieldError(fieldName) {
+    var group = form.querySelector('[data-field="' + fieldName + '"]');
+    if (group) group.classList.add('error');
+  }
+
+  function validate() {
+    clearErrors();
+    var valid = true;
+    var name = form.name.value.trim();
+    var company = form.company.value.trim();
+    var email = form.email.value.trim();
+    var phone = form.phone.value.trim();
+
+    if (!name) { setFieldError('name'); valid = false; }
+    if (!company) { setFieldError('company'); valid = false; }
+
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailPattern.test(email)) { setFieldError('email'); valid = false; }
+
+    var phoneDigits = phone.replace(/[\s\-()]/g, '');
+    var phonePattern = /^\+?[0-9]{9,15}$/;
+    if (!phone || !phonePattern.test(phoneDigits)) { setFieldError('phone'); valid = false; }
+
+    if (!valid) {
+      var firstError = form.querySelector('.form-group.error input, .form-group.error select');
+      if (firstError) firstError.focus();
+    }
+    return valid;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusBox.classList.remove('show', 'success', 'error');
+
+    // Honeypot: silently drop likely-bot submissions
+    if (form.website && form.website.value) { return; }
+
+    if (!validate()) {
+      showStatus('error',
+        'กรุณาตรวจสอบข้อมูลในฟอร์มให้ครบถ้วนและถูกต้อง',
+        'Please check the highlighted fields and try again.');
+      return;
+    }
+
+    var formData = new FormData(form);
+    var payload = {};
+    formData.forEach(function (value, key) { payload[key] = value; });
+    Object.assign(payload, getUTMParams());
+    payload.page_url = window.location.href;
+    payload.language = currentLang();
+    payload.submitted_at = new Date().toISOString();
+    delete payload.website; // honeypot, not needed downstream
+
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors', // Apps Script responses don't include CORS headers —
+                        // "no-cors" sends the request without trying to read
+                        // the response, which avoids the browser blocking it.
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' }, // avoids a CORS preflight
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        // With mode:'no-cors' the response is "opaque" — we can't read its
+        // status or body. If we reach here at all, the request left the
+        // browser successfully; Apps Script processes it server-side
+        // regardless of whether we can read the reply.
+        return res;
+      })
+      .then(function () {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        trackLeadConversion(payload);
+        form.reset();
+        showStatus('success',
+          '✅ ส่งคำขอสำเร็จ! ทีมงานจะติดต่อกลับภายใน 24 ชั่วโมง',
+          '✅ Request submitted! Our team will contact you within 24 hours.');
+      })
+      .catch(function () {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        showStatus('error',
+          '❌ ส่งข้อมูลไม่สำเร็จ กรุณาลองใหม่ หรือติดต่อ hello@thcloud.ai',
+          '❌ Something went wrong. Please try again, or email hello@thcloud.ai directly.');
+      });
+  });
+
+  // Clear a field's error state as soon as the user starts fixing it
+  ['name', 'company', 'email', 'phone'].forEach(function (fieldName) {
+    var input = form.elements[fieldName];
+    if (input) {
+      input.addEventListener('input', function () {
+        var group = form.querySelector('[data-field="' + fieldName + '"]');
+        if (group) group.classList.remove('error');
+      });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
